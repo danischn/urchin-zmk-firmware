@@ -19,29 +19,30 @@
 };
 
 / {
-    keymap {
-        compatible = "zmk,keymap";
+        keymap {
+                compatible = "zmk,keymap";
 
-        // Base alpha layer
-        base_layer {
-            label = "Base";
-            bindings = <
-                    &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U &kp I &kp O &kp P
-                    &kp A &kp S &kp D &kp F &kp G   &kp H &kp J &kp K &kp L &kp SEMI
-                    &mt LSHIFT Z &kp X &kp C &kp V  &kp B &kp N &kp M &kp COMMA &kp DOT &kp SLASH
-                    &kp TAB &mt LCTRL BSPC          &mt LALT SPACE &mt SYM ENTER
-            >;
-        };
+                // Base alpha layer
+                base_layer {
+                        label = "Base";
+                        bindings = <
+                                &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U &kp I &kp O &kp P
+                                &kp A &kp S &kp D &kp F &kp G   &kp H &kp J &kp K &kp L &kp SEMI
+                                &mt LSHIFT Z &kp X &kp C &kp V  &kp B &kp N &kp M &kp COMMA &kp DOT &kp SLASH
+                                &kp TAB &mt LCTRL BSPC          &mt LALT SPACE &mt SYM ENTER
+                        >;
+                };
 
-        // Sym layer with numpad
-        sym_layer {
-            label = "Sym";
-            bindings = <
-                    &kp EXCL  &kp AT     &kp HASH &kp DOLLAR &kp PERC   &kp AMP &kp STAR &kp LPAR &kp RPAR &kp UNDER
-                    &kp GRAVE &kp TILDE  &kp PIPE &kp BSLASH &kp PLUS  &kp 7 &kp 8 &kp 9 &kp MINUS &kp EQUAL
-                    &kp CARET &kp LBRACE &kp RBRACE &kp COLON &kp SEMICOLON   &kp 4 &kp 5 &kp 6 &kp KP_COMMA &kp DOT
-                    &kp ESC   &kp LCTRL  &kp LALT SPACE &kp 0 &kp 1 &kp 2 &kp 3 &kp ENTER
-            >;
+                // Sym layer with numpad
+                // Sym layer with numpad
+                sym_layer {
+                        label = "Sym";
+                        bindings = <
+                                &kp EXCL  &kp AT     &kp HASH   &kp DOLLAR &kp PERC    &kp AMP     &kp STAR    &kp LPAR &kp RPAR &kp UNDER
+                                &kp GRAVE &kp TILDE  &kp PIPE   &kp BSLASH &kp PLUS    &kp N7      &kp N8      &kp N9   &kp MINUS &kp EQUAL
+                                &kp CARET &kp LBRACE &kp RBRACE &kp COLON  &kp SEMICOLON &kp N4    &kp N5      &kp N6   &kp COMMA &kp DOT
+                                &kp ESC   &kp LCTRL  &kp LALT   &kp SPACE  &kp N0      &kp N1      &kp N2      &kp N3   &kp ENTER
+                        >;
+                };
         };
-    };
 };
